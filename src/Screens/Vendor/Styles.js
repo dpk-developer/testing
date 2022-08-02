@@ -1,0 +1,228 @@
+import { Platform, StyleSheet } from 'react-native';
+
+import {
+  scale,
+  moderateScale,
+  moderateVerticalScale,
+} from 'react-native-size-matters';
+
+import Colors from '../../Styles/Colors';
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'white',
+  },
+  galleryViewStyle: {
+    alignSelf: 'center',
+  },
+  videoViewStyle: {
+    marginHorizontal: 10,
+  },
+  galleryImgStyle: {
+    width: moderateScale(160),
+    height: moderateVerticalScale(118),
+    margin: moderateScale(5),
+  },
+  galleryDeleteImgStyle: {
+    width: moderateScale(20),
+    height: moderateVerticalScale(20),
+    tintColor: Colors.theme,
+  },
+  deleteBtnStyle: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: moderateScale(25),
+    height: moderateVerticalScale(25),
+    margin: moderateScale(5),
+    top: moderateVerticalScale(-122),
+    right: moderateScale(-130),
+    borderRadius: moderateScale(360),
+    backgroundColor: Colors.white,
+  },
+  imageViewerDeleteBtnStyle: {
+    alignSelf: 'flex-end',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: moderateScale(50),
+    height: moderateVerticalScale(50),
+    borderRadius: moderateScale(360),
+  },
+  bottomBtnViewStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  labelStyle: {
+    color: Colors.darkBlack,
+    fontWeight: '500',
+    fontSize: scale(14),
+    top: moderateVerticalScale(-10),
+  },
+  buttonStyle: {
+    width: '49.9%',
+    height: moderateVerticalScale(80),
+    backgroundColor: Colors.theme,
+  },
+  blurGalleryImgStyle: {
+    top: moderateVerticalScale(-112),
+    width: moderateScale(169),
+    height: moderateVerticalScale(140),
+    alignItems: 'center',
+    justifyContent: 'center',
+    ...StyleSheet.absoluteFillObject,
+  },
+  rightImgStyle: {
+    width: moderateScale(15),
+    height: moderateVerticalScale(15),
+    borderRadius: moderateScale(360),
+  },
+  rightBtnStyle: {
+    alignItems: 'center',
+    width: moderateScale(30),
+    height: moderateVerticalScale(30),
+    borderRadius: moderateScale(360),
+    marginRight: moderateScale(-2.5),
+  },
+  addVideoIdStyle: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: Colors.white,
+    borderRadius: moderateScale(2.5),
+  },
+  addVideoIdFlexStyle: {
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    flexDirection: 'row',
+    marginTop: moderateVerticalScale(20),
+  },
+  textInputStyle: {
+    width: '60%',
+    height: moderateVerticalScale(50),
+    fontSize: scale(10.3),
+    borderRadius: moderateScale(2.5),
+    backgroundColor: Colors.theme,
+  },
+  textInputTwoStyle: {
+    width: '90%',
+    height: moderateVerticalScale(50),
+    fontSize: scale(10.3),
+    paddingStart: moderateScale(10),
+    borderRadius: moderateScale(2.5),
+    backgroundColor: Colors.whiteOpacity25,
+    marginTop: moderateVerticalScale(20),
+  },
+  submitLabelStyle: {
+    fontWeight: '400',
+    fontSize: scale(12),
+  },
+  submitButtonStyle: {
+    width: '50%',
+    height: moderateVerticalScale(40),
+    backgroundColor: Colors.theme,
+    alignSelf: 'center',
+    marginTop: moderateScale(20),
+    shadowColor:
+      Platform.OS === 'ios' ? Colors.blackOpacity25 : Colors.darkBlack,
+    shadowOffset: { width: -2, height: 5 },
+    shadowOpacity: 1,
+    elevation: 10,
+    borderRadius: moderateScale(39),
+  },
+  submitDisableStyle: {
+    width: '50%',
+    height: moderateVerticalScale(40),
+    backgroundColor: Colors.themeOpacity50,
+    alignSelf: 'center',
+    shadowColor:
+      Platform.OS === 'ios' ? Colors.blackOpacity25 : Colors.darkBlack,
+    shadowOffset: { width: -2, height: 5 },
+    shadowOpacity: 1,
+    elevation: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 0,
+    borderBottomEndRadius: moderateScale(4),
+  },
+  highlightStyle: {
+    width: '100%',
+    borderTopStartRadius: moderateScale(4),
+    borderTopEndRadius: moderateScale(4),
+    backgroundColor: Colors.theme,
+    height: moderateVerticalScale(8),
+  },
+  albumContainerStyle: {
+    alignSelf: 'center',
+    backgroundColor: Colors.white,
+    width: moderateScale(300),
+    borderTopStartRadius: moderateScale(4),
+    borderTopEndRadius: moderateScale(4),
+  },
+  inputStyle: {
+    borderRadius: 0,
+    margin: moderateScale(5),
+    top: 8,
+    elevation: 0,
+    color: 'red',
+    backgroundColor: Colors.white,
+  },
+  buttonMenuStyle: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    top: moderateVerticalScale(40),
+  },
+  cancelBtnStyle: {
+    width: '50%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: moderateVerticalScale(40),
+    backgroundColor: '#d9dadb',
+    borderBottomStartRadius: moderateScale(4),
+  },
+  submitBtnStyle: {
+    width: '50%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 0,
+    height: moderateVerticalScale(40),
+    backgroundColor: Colors.theme,
+    borderBottomEndRadius: moderateScale(4),
+  },
+  labelStyle2: {
+    fontWeight: '500',
+    fontSize: scale(13),
+    color: Colors.blackOpacity80,
+  },
+  galleryTextViewStyle: {
+    width: moderateScale(160),
+    height: moderateVerticalScale(34),
+    backgroundColor: Colors.whiteOpacity30,
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: moderateVerticalScale(-40),
+    right: moderateScale(-5),
+  },
+  galleryTextViewTwoStyle: {
+    width: moderateScale(160),
+    height: moderateVerticalScale(34),
+    backgroundColor: Colors.whiteOpacity30,
+    alignItems: 'center',
+    justifyContent: 'center',
+    top: moderateVerticalScale(5),
+    right: moderateScale(-5),
+  },
+  teamUserTextStyle: {
+    color: Colors.blackOpacity75,
+    fontWeight: '500',
+    fontSize: scale(13),
+  },
+  viewMoreTextStyle: {
+    color: Colors.green,
+    fontWeight: '500',
+    fontSize: scale(13),
+    // right: moderateScale(20),
+  },
+});
+
+export default styles;

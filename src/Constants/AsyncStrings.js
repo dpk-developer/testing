@@ -1,0 +1,5 @@
+export default {
+  USER_ACCESS_TOKEN: 'USER_ACCESS_TOKEN',
+  USER_ID: 'USER_ID',
+  USER_DETAILS: 'USER_DETAILS',
+};
